@@ -81,8 +81,11 @@
         padding-bottom: 0.2em;
       }
 
-      .far {
-        font-size: 3em;
+      .far , .fas {
+        font-size: 2.5em;
+      }
+      .fa-robot{
+        font-size: 1em;
       }
       .radio-inline {
         text-align: center;
@@ -90,6 +93,9 @@
       .radio-inline span{
         display: block;
         margin-left: 0.4em;
+      }
+      .mandatory{
+        color: #ff3679;
       }
 
     </style>
@@ -106,8 +112,8 @@
           <br>
           ¿Cómo puedes participar? te contamos:
           <ul>
-            <li>Selecciona algún comentario de alguna prueba con usuario que hayas hecho</li>
-            <li>Agrégalo en el formulario en el campo "Comentario del usuario"</li>
+            <li>Selecciona algún <strong>comentario importante de usuario</strong> que hayas obtenido en algún estudio hecho</li>
+            <li>Agrega el comentario en el formulario (Comentario del usuario <span class="mandatory">*</span>)</li>
             <li>Selecciona una emoción que represente el comentario del usuario</li>
             <li>Califica el comentario del usuario según tu percepción</li>
           </ul>
@@ -117,21 +123,21 @@
         <br>
         <img src="brand.svg" alt="Augmented Design"/>
       </br>
-        <p>Un abrazo! Augmented design</p>
+        <p>Un abrazo! Augmented design team</p>
       </div>
       <div class="item two">
         <article class="form">
           <!-- <div class="index">1</div> -->
           <form class="surveyItem">
             <h3 for="userComment" class="form-label">
-              Comentario del usuario *
+              Comentario del usuario <span class="mandatory">*</span>
             </h3>
             <textarea class="form-control" id="userComment" rows="5"></textarea>
-
+            <p>Ej: "No me queda claro cuánto voy a pagar. Me gustaría tener claridad de eso <br>para continuar con mi compra."</p>
             <br />
             <br />
             <div>
-              <h3>Selecciona la emoción del comentario *</h3>
+              <h3>Selecciona la emoción del comentario <span class="mandatory">*</span></h3>
               <label class="radio-inline">
                 <i class="far fa-laugh-wink"></i>
               </br>
@@ -178,11 +184,15 @@
             <br />
             <br />
             <div>
-              <h3>Califica el comentario del usuario *</h3>
+              <h3>Califica el comentario del usuario <span class="mandatory">*</span></h3>
               <label class="radio-inline">
+                <i class="far fa-check-circle"></i>
+                </br>
                 <input type="radio" name="check" /><span>Es un comentario positivo</span>
               </label>
               <label class="radio-inline">
+                <i class="far fa-times-circle"></i>
+                </br>
                 <input type="radio" name="check" /><span>Es un comentario negativo</span>
               </label>
             </div>
