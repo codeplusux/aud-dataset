@@ -58,8 +58,8 @@
         width: 55%;
         display: flex;
         flex-direction: row;
-        background-color: #fafafc;
-        height: 100vh;
+        /* background-color: #fafafc; */
+        /* height: 100vh; */
       }
 
       .radio-inline {
@@ -92,30 +92,31 @@
       <div class="item one">
         <h1>Augmented design</h1>
         <p>
-          WIP >>> Hola! somos del equipo augmented design y nos ayudaría mucho
-          tu colaboración. Cuando hacemos test con usuario a demás de medir la
-          experiencia tomamos nota de los comentarios que las personas nos
-          hacen. Te invitamos a compartir esos comentarios y ser parte de este
-          experimento. En el formulario solo tienes que ingresar el comentario
-          que te hizo un usuarios en uno de tus test, los que tu quieras, poner
-          una emoción que tu consideras el usuario pudo haber tenido y
-          finalmente decirnos cómo calificarías ese comentario. ..........
+          Querid@ UXer! somos del equipo augmented design y necesitamos tu colaboración. 
+          ¿Cómo puedes participar? te contamos:
+          <ul>
+            <li>Selecciona un comentario de alguna prueba con usuario que hayas hecho</li>
+            <li>Agrégalo en el formulario en el campo "Comentario del usuario"</li>
+            <li>Selecciona una emoción que represente el comentario del usuario</li>
+            <li>Califica el comentario del usuario según tu percepción</li>
+          </ul>
+          Y listo. Envía el comentario de tu usuario y se parte de esta iniciativa.
         </p>
-        <footer>Saludos equipo Augmented design</footer>
+        <p>Un abrazo! Augmented design</p>
       </div>
       <div class="item two">
         <article class="form">
-          <div class="index">1</div>
+          <!-- <div class="index">1</div> -->
           <form class="surveyItem">
             <h3 for="userComment" class="form-label">
-              Ingresa el comentario que obtuviste en el test con usuario *
+              Comentario del usuario *
             </h3>
             <textarea class="form-control" id="userComment" rows="5"></textarea>
 
             <br />
             <br />
             <div>
-              <h3>¿Qué emoción asosiarías a este comentario? *</h3>
+              <h3>Selecciona la emoción del comentario *</h3>
               <label class="radio-inline">
                 <input type="radio" name="emotion" />Contento
               </label>
@@ -138,7 +139,7 @@
             <br />
             <br />
             <div>
-              <h3>¿Cómo calificarías este comentario? *</h3>
+              <h3>Califica el comentario del usuario *</h3>
               <label class="radio-inline">
                 <input type="radio" name="check" />Es un comentario positivo
               </label>
@@ -147,12 +148,12 @@
               </label>
             </div>
           </form>
-          <div class="buttonAddRemove">
-            <h3>¿Tienes otro comentario?... súmalo a tu aporte</h3>
+          <!-- <div class="buttonAddRemove">
+            <h3>Agregar otro comenta... súmalo a tu aporte</h3>
 
             <button type="button" class="btn btn-success">Agregar</button>
             <button type="button" class="btn btn-danger">Quitar</button>
-          </div>
+          </div> -->
 
           <br /><br />
           <button type="submit" class="btn btn-primary">Enviar</button>
