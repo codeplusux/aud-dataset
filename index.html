@@ -58,13 +58,28 @@
         width: 50%;
         display: flex;
         flex-direction: row;
+        background-color: #fafafc;
+        height: 100vh;
       }
+
       .radio-inline {
         padding-right: 1.3em;
       }
 
       .buttonAddRemove {
         padding-top: 2em;
+      }
+
+      .surveyItem {
+        border: 1px solid #eaeaea;
+        border-radius: 1em;
+        padding: 2em;
+      }
+
+      .index {
+        color: #676f8f;
+        font-size: 1.7em;
+        padding-bottom: 0.2em;
       }
     </style>
 
@@ -89,8 +104,8 @@
       </div>
       <div class="item two">
         <article class="form">
-          <div class="number">1</div>
-          <form>
+          <div class="index">1</div>
+          <form class="surveyItem">
             <h3 for="userComment" class="form-label">
               Ingresa el comentario que obtuviste en el test con usuario *
             </h3>
@@ -130,14 +145,13 @@
                 <input type="radio" name="check" />Es un comentario correcto
               </label>
             </div>
-
-            <div class="buttonAddRemove">
-              <h3>¿Tienes otro comentario?... súmalo a tu aporte</h3>
-
-              <button type="button" class="btn btn-success">Agregar</button>
-              <button type="button" class="btn btn-danger">Quitar</button>
-            </div>
           </form>
+          <div class="buttonAddRemove">
+            <h3>¿Tienes otro comentario?... súmalo a tu aporte</h3>
+
+            <button type="button" class="btn btn-success">Agregar</button>
+            <button type="button" class="btn btn-danger">Quitar</button>
+          </div>
 
           <br /><br />
           <button type="submit" class="btn btn-primary">Enviar</button>
