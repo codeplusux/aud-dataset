@@ -51,11 +51,11 @@
       }
 
       .one {
-        width: 40%;
+        width: 50%;
       }
 
       .two {
-        width: 60%;
+        width: 50%;
         display: flex;
         flex-direction: row;
       }
@@ -63,13 +63,7 @@
         padding-right: 1.3em;
       }
 
-      .form {
-        width: 50%;
-      }
       .buttonAddRemove {
-        width: 50%;
-        justify-content: center;
-        padding-left: 2em;
         padding-top: 2em;
       }
     </style>
@@ -80,74 +74,74 @@
   <body>
     <div class="box">
       <div class="item one">
-        <h1>Título aquí</h1>
-        <h2>Misión</h2>
+        <h1>Augmented design</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus
-          placerat quam ut tempor. Sed vitae convallis leo. Nam nec interdum
-          arcu, eu elementum sapien.
+          WIP >>> Hola! somos del equipo augmented design y nos ayudaría mucho
+          tu colaboración. Cuando hacemos test con usuario a demás de medir la
+          experiencia tomamos nota de los comentarios que las personas nos
+          hacen. Te invitamos a compartir esos comentarios y ser parte de este
+          experimento. En el formulario solo tienes que ingresar el comentario
+          que te hizo un usuarios en uno de tus test, los que tu quieras, poner
+          una emoción que tu consideras el usuario pudo haber tenido y
+          finalmente decirnos cómo calificarías ese comentario. ..........
         </p>
-        <footer>Augmented Design</footer>
+        <footer>Saludos equipo Augmented design</footer>
       </div>
       <div class="item two">
         <article class="form">
           <div class="number">1</div>
           <form>
-            <h3 for="userComment" class="form-label">Comentario del usuario</h3>
-            <p>
-              Duis metus nibh, tincidunt at malesuada vitae, dictum vitae ex
-            </p>
+            <h3 for="userComment" class="form-label">
+              Ingresa el comentario que obtuviste en el test con usuario *
+            </h3>
             <textarea class="form-control" id="userComment" rows="5"></textarea>
 
             <br />
             <br />
             <div>
-              <h3>Emoción</h3>
-              <p>
-                Duis metus nibh, tincidunt at malesuada vitae, dictum vitae ex
-              </p>
+              <h3>¿Qué emoción le colocarías a este comentario? *</h3>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Ira
+                <input type="radio" name="emotion" />Contento
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Asco
+                <input type="radio" name="emotion" />Neutral
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Tristeza
+                <input type="radio" name="emotion" />Triste
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Miedo
+                <input type="radio" name="emotion" />Enojado
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Sorpresa
+                <input type="radio" name="emotion" />Miedoso
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Alegría
+                <input type="radio" name="emotion" />Disgustado
               </label>
             </div>
             <br />
             <br />
             <div>
-              <h3>Validación</h3>
-              <p>
-                Cras ultrices, velit id fermentum dignissim, risus orci mollis
-                erat
-              </p>
+              <h3>¿Cómo calificarías este comentario? *</h3>
               <label class="radio-inline">
-                <input type="radio" name="check" />Incorrecto
+                <input type="radio" name="check" />Es un comentario incorrecto
               </label>
               <label class="radio-inline">
-                <input type="radio" name="check" />Correcto
+                <input type="radio" name="check" />Es un comentario correcto
               </label>
             </div>
+
+            <div class="buttonAddRemove">
+              <h3>¿Tienes otro comentario?... súmalo a tu aporte</h3>
+
+              <button type="button" class="btn btn-success">Agregar</button>
+              <button type="button" class="btn btn-danger">Quitar</button>
+            </div>
           </form>
+
           <br /><br />
           <button type="submit" class="btn btn-primary">Enviar</button>
         </article>
-        <div class="buttonAddRemove">
-          <button type="button" class="btn btn-success">Agregar otro</button>
-          <button type="button" class="btn btn-danger">Eliminar</button>
-        </div>
       </div>
     </div>
   </body>
