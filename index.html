@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      h1 {
+        color: #00007c;
+        font-weight: bold;
+      }
+      h2 {
+        color: #494f66;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: 1.6em;
+        color: #676f8f;
+      }
+      p {
+        color: #676f8f;
+      }
+      label {
+        color: #494f66;
+      }
+
+      .btn-primary {
+        align-self: flex-end;
+      }
+      .btn-primary,
+      .btn-primary:hover {
+        background-color: #00007c;
+        border: none;
+        padding: 0.9em 5em;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .item {
+        padding: 0 5em;
+      }
+
+      .one {
+        width: 40%;
+      }
+
+      .two {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+      }
+      .radio-inline {
+        padding-right: 1.3em;
+      }
+
+      .form {
+        width: 50%;
+      }
+      .buttonAddRemove {
+        width: 50%;
+        justify-content: center;
+        padding-left: 2em;
+        padding-top: 2em;
+      }
+    </style>
+
+    <title>Augmeted Design</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="item one">
+        <h1>Título aquí</h1>
+        <h2>Misión</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus
+          placerat quam ut tempor. Sed vitae convallis leo. Nam nec interdum
+          arcu, eu elementum sapien.
+        </p>
+        <footer>Augmented Design</footer>
+      </div>
+      <div class="item two">
+        <article class="form">
+          <div class="number">1</div>
+          <form>
+            <h3 for="userComment" class="form-label">Comentario del usuario</h3>
+            <p>
+              Duis metus nibh, tincidunt at malesuada vitae, dictum vitae ex
+            </p>
+            <textarea class="form-control" id="userComment" rows="5"></textarea>
+
+            <br />
+            <br />
+            <div>
+              <h3>Emoción</h3>
+              <p>
+                Duis metus nibh, tincidunt at malesuada vitae, dictum vitae ex
+              </p>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Ira
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Asco
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Tristeza
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Miedo
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Sorpresa
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Alegría
+              </label>
+            </div>
+            <br />
+            <br />
+            <div>
+              <h3>Validación</h3>
+              <p>
+                Cras ultrices, velit id fermentum dignissim, risus orci mollis
+                erat
+              </p>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Incorrecto
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio" />Correcto
+              </label>
+            </div>
+          </form>
+          <br /><br />
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </article>
+        <div class="buttonAddRemove">
+          <button type="button" class="btn btn-success">Agregar otro</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
