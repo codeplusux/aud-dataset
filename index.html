@@ -9,6 +9,7 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/13248dab7a.js" crossorigin="anonymous"></script>
 
     <style>
       h1 {
@@ -22,6 +23,7 @@
       h3 {
         font-size: 1.6em;
         color: #676f8f;
+        padding-bottom: 0.5em;
       }
       p {
         color: #676f8f;
@@ -82,6 +84,18 @@
         font-size: 1.7em;
         padding-bottom: 0.2em;
       }
+
+      .far {
+        font-size: 3em;
+      }
+      .radio-inline {
+        text-align: center;
+      }
+      .radio-inline span{
+        display: block;
+        margin-left: 0.4em;
+      }
+
     </style>
 
     <title>Augmeted Design</title>
@@ -118,22 +132,46 @@
             <div>
               <h3>Selecciona la emoción del comentario *</h3>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Contento
+                <i class="far fa-laugh-wink"></i>
+              </br>
+                <input type="radio" name="emotion" />
+              </br>
+              <span>Contento</span>
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Neutral
+                <i class="far fa-meh"></i>
+              </br>
+                <input type="radio" name="emotion" />
+              </br>
+              <span>Neutral</span>
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Triste
+                <i class="far fa-sad-tear"></i>
+              </br>
+                <input type="radio" name="emotion" />
+              </br>
+              <span>Triste</span>
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Enojado
+                <i class="far fa-angry"></i>
+              </br>
+                <input type="radio" name="emotion" />
+              </br>
+              <span>Enojado</span>
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Miedoso
+                <i class="far fa-surprise"></i>
+              </br>
+                <input type="radio" name="emotion" />
+              </br>
+              <span>Miedoso</span>
               </label>
               <label class="radio-inline">
-                <input type="radio" name="emotion" />Disgustado
+                <i class="far fa-tired"></i>
+              </br>
+                <input type="radio" name="emotion" />
+              </br>
+              <span>Disgustado</span>
               </label>
             </div>
             <br />
@@ -141,20 +179,13 @@
             <div>
               <h3>Califica el comentario del usuario *</h3>
               <label class="radio-inline">
-                <input type="radio" name="check" />Es un comentario positivo
+                <input type="radio" name="check" /><span>Es un comentario positivo</span>
               </label>
               <label class="radio-inline">
-                <input type="radio" name="check" />Es un comentario negativo
+                <input type="radio" name="check" /><span>Es un comentario negativo</span>
               </label>
             </div>
           </form>
-          <!-- <div class="buttonAddRemove">
-            <h3>Agregar otro comenta... súmalo a tu aporte</h3>
-
-            <button type="button" class="btn btn-success">Agregar</button>
-            <button type="button" class="btn btn-danger">Quitar</button>
-          </div> -->
-
           <br /><br />
           <button type="submit" class="btn btn-primary">Enviar</button>
         </article>
