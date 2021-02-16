@@ -62,6 +62,17 @@
 
       .radio-inline {
         padding-right: 1.3em;
+        text-align: center;
+      }
+
+      .radio-inline span , .radio-inline-two span{
+        display: block;
+        margin-left: 0.4em;
+      }
+
+      .radio-inline-two{
+        padding-right: 3em;
+        text-align: center;
       }
 
       .buttonAddRemove {
@@ -87,13 +98,7 @@
       .fa-robot{
         font-size: 1em;
       }
-      .radio-inline {
-        text-align: center;
-      }
-      .radio-inline span{
-        display: block;
-        margin-left: 0.4em;
-      }
+
       .mandatory{
         color: #ff3679;
       }
@@ -184,16 +189,21 @@
             <br />
             <br />
             <div>
-              <h3>Califica el comentario del usuario <span class="mandatory">*</span></h3>
-              <label class="radio-inline">
+              <h3>Según el comentario del usuario, la experiencia fue: <span class="mandatory">*</span></h3>
+              <label class="radio-inline-two">
                 <i class="far fa-check-circle"></i>
                 </br>
-                <input type="radio" name="check" /><span>Es un comentario positivo</span>
+                <input type="radio" name="check" /><span>Buena</span>
               </label>
-              <label class="radio-inline">
+              <label class="radio-inline-two">
+                <i class="far fa-check-circle"></i>
+                </br>
+                <input type="radio" name="check" /><span>Neutral</span>
+              </label>
+              <label class="radio-inline-two">
                 <i class="far fa-times-circle"></i>
                 </br>
-                <input type="radio" name="check" /><span>Es un comentario negativo</span>
+                <input type="radio" name="check" /><span>Mala</span>
               </label>
             </div>
           </form>
